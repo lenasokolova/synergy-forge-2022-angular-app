@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="box" id="budget-name">
+      <synergy-forge-add-budget></synergy-forge-add-budget>
+    </div>
+    <div class="box" id="category-view">
+      <h2>Kategorie budżetu</h2>
+    </div>
+    <div class="box" id="info-and-photo">INFO&foto</div>
+    <div class="box" id="buttons">
+      <button mat-icon-button class="add-button" (click)='Show()'>
+        <mat-icon>add</mat-icon>
+      Dodaj nową kategorię
+      </button>
+    </div>
+    <div *ngIf="condition" class="new-category">
+      <h3>Nowa kategoria</h3>
+      <div class="labels">
+        <input type="text">
+      </div>
+    </div>
+    <div class="box" id="category-view">
+      <synergy-forge-category></synergy-forge-category>
+    </div>
+    <div class="box" id="info-and-photo">        <synergy-forge-info-card></synergy-forge-info-card>
+    </div>
+    <div class="box" id="buttons">Buttons</div>
+</div>

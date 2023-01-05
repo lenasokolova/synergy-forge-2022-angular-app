@@ -1,0 +1,50 @@
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        border: 1px solid black;
+    }
+
+    .box {
+        margin: 10px;
+    }
+
+    #budget-name {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-start: 1;
+    }
+
+    #category-view {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    #info-and-photo {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    #buttons {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+
+    .add-button {
+        display: flex;
+        border: none;
+        background-color: white;
+        
+    }
+
+    .icon {
+        border-radius: 50%;
+        background-color: purple;
+    }

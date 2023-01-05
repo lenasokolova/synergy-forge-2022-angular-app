@@ -1,0 +1,22 @@
+<synergy-forge-wraper>
+  <form [formGroup]="form">
+    <div class="wrap-inupt">
+      <mat-label>Nazwa budżetu</mat-label>
+      <mat-form-field class="example-full-width">
+        <input formControlName="name"  matInput>
+      </mat-form-field>
+    </div>
+    <div class="wrap-inupt">
+      <mat-label>Planowany budżet (zł)</mat-label>
+      <mat-form-field class="example-full-width">
+        <input formControlName="budget"  matInput>
+      </mat-form-field>
+    </div>
+    <div class="wrap-inupt">
+      <mat-label>Planowana liczba osób</mat-label>
+      <mat-form-field class="example-full-width">
+        <input formControlName="participants" matInput>
+      </mat-form-field>
+    </div>
+  </form>
+</synergy-forge-wraper>

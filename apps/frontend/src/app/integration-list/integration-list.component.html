@@ -1,0 +1,13 @@
+<div class="container" >
+  <h2 class="header">Wybierz edycję integracji</h2>
+  <div class="integrations-cards">
+<ng-container *ngFor="let integration of integrations$ | async">
+  <synergy-forge-integration-item
+    [integration]="integration"
+    [routerLink]="['integration/', integration.id]"
+    class="list-item"
+  ></synergy-forge-integration-item>
+</ng-container>
+<button class="new-integrations" [routerLink]="['addIntegration']">+</button>
+  </div>
+</div>

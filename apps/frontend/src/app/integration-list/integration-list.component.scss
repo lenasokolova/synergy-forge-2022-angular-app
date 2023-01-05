@@ -1,0 +1,41 @@
+.list-item {
+  margin: 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100vh;
+  margin: 30px;
+}
+
+.header {
+  margin-top: 30px;
+  font-size: 35px;
+  margin: 3em;
+  text-align: center;
+}
+.integrations-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-integrations {
+  margin-top: 27px;
+  margin-left: 70px;
+  height: 100px;
+  width: 100px;
+  background: #EFEAF5 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 10px #0000001F;
+  border-radius: 10px;
+  border: none;
+  opacity: 1;
+  font-size: 53px;
+  color: #785BAF;
+  }
+
+  .new-integrations:hover {
+    cursor: pointer;
+  }

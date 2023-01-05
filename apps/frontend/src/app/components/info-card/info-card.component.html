@@ -1,0 +1,24 @@
+<div class="main-container">
+    <div class="container-title">
+        <h2>Info & photo</h2>
+    </div>
+    <div class="container-input">
+        <label for="name">
+            Nazwa
+        </label>
+        <input type="text" placeholder="Integracja 2023">
+    </div>
+    <div class="container-image">
+        <ngx-dropzone class="container-image-dropzone" (change)="onSelect($event)">
+            
+            <ngx-dropzone-label class='dropzone-container'>
+                            <mat-icon class="mat-icon-rtl-mirror" fontIcon="cloud_upload"></mat-icon>
+
+                <strong class="click-to-upload"><u>Click to upload</u></strong> or drag & drop</ngx-dropzone-label>
+            <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+                <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+            </ngx-dropzone-preview>
+        </ngx-dropzone>
+        
+    </div>
+</div>

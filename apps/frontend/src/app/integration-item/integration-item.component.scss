@@ -1,0 +1,17 @@
+.card {
+    width: 250px;
+    // height: 300px;
+}
+
+.picture {
+    height: 70px;
+}
+.combined {
+    display: flex;
+    align-items: center;
+    >span{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+}
+

@@ -1,0 +1,9 @@
+form {
+  display: flex;
+  justify-content: space-around;
+
+  .wrap-inupt {
+    display: flex;
+    flex-direction: column;
+  }
+}
